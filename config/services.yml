@@ -1,0 +1,11 @@
+services:
+    avathar.bbguild_lineage2.installer:
+        class: avathar\bbguild_lineage2\game\lineage2_installer
+
+    avathar.bbguild_lineage2.provider:
+        class: avathar\bbguild_lineage2\game\lineage2_provider
+        arguments:
+            - '@avathar.bbguild_lineage2.installer'
+            - '@ext.manager'
+        tags:
+            - { name: bbguild.game_provider }
