@@ -2,12 +2,12 @@
 /**
  * bbGuild Lineage 2 Extension
  *
- * @package   bbguild_lineage2 v2.0
+ * @package   bbguildlineage2 v2.0
  * @copyright 2018 avathar.be
  * @license   http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  */
 
-namespace avathar\bbguild_lineage2;
+namespace avathar\bbguildlineage2;
 
 use phpbb\extension\base;
 

@@ -1,16 +1,16 @@
 services:
-    avathar.bbguild_lineage2.installer:
-        class: avathar\bbguild_lineage2\game\lineage2_installer
+    avathar.bbguildlineage2.installer:
+        class: avathar\bbguildlineage2\game\lineage2_installer
         arguments:
             - '@dbal.conn'
             - '@cache.driver'
             - '@config'
             - '@user'
 
-    avathar.bbguild_lineage2.provider:
-        class: avathar\bbguild_lineage2\game\lineage2_provider
+    avathar.bbguildlineage2.provider:
+        class: avathar\bbguildlineage2\game\lineage2_provider
         arguments:
-            - '@avathar.bbguild_lineage2.installer'
+            - '@avathar.bbguildlineage2.installer'
             - '@ext.manager'
         tags:
             - { name: bbguild.game_provider }

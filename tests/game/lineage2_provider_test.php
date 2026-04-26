@@ -5,11 +5,11 @@
  * @license GNU General Public License, version 2 (GPL-2.0)
  */
 
-namespace avathar\bbguild_lineage2\tests\game;
+namespace avathar\bbguildlineage2\tests\game;
 
 use PHPUnit\Framework\TestCase;
-use avathar\bbguild_lineage2\game\lineage2_provider;
-use avathar\bbguild_lineage2\game\lineage2_installer;
+use avathar\bbguildlineage2\game\lineage2_provider;
+use avathar\bbguildlineage2\game\lineage2_installer;
 
 class lineage2_provider_test extends TestCase
 {
@@ -28,7 +28,7 @@ class lineage2_provider_test extends TestCase
 			->disableOriginalConstructor()
 			->getMock();
 		$ext_manager->method('get_extension_path')
-			->willReturn('ext/avathar/bbguild_lineage2/');
+			->willReturn('ext/avathar/bbguildlineage2/');
 
 		$this->provider = new lineage2_provider($installer, $ext_manager);
 	}
@@ -56,7 +56,7 @@ class lineage2_provider_test extends TestCase
 
 	public function test_images_path(): void
 	{
-		$this->assertStringContainsString('bbguild_lineage2', $this->provider->get_images_path());
+		$this->assertStringContainsString('bbguildlineage2', $this->provider->get_images_path());
 		$this->assertStringEndsWith('images/', $this->provider->get_images_path());
 	}
 

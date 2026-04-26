@@ -1,5 +1,5 @@
 {
-  "name": "avathar/bbguild-lineage2",
+  "name": "avathar/bbguildlineage2",
   "type": "phpbb-extension",
   "description": "Lineage 2 game plugin for bbGuild. Provides Lineage 2 classes, races, and factions.",
   "homepage": "https://github.com/avandenberghe/bbguild",
@@ -27,7 +27,7 @@
     "version-check": {
       "host": "www.avathar.be",
       "directory": "/versioncheck",
-      "filename": "bbguild-lineage2.json",
+      "filename": "bbguildlineage2.json",
       "ssl": true
     }
   }
